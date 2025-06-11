@@ -1,0 +1,1351 @@
+*{
+    padding: 0;
+margin: 0;
+border:none;
+outline: none;
+box-sizing: border-box;
+text-decoration: none;
+   font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/*------------body start--------*/
+body{
+    color: #000;
+    background: #efefef;   
+}
+.container{
+    width: 75%;
+}
+/*------------start header--------*/
+header{
+    width: 100%;
+   background-color: #fff;
+    cursor: pointer;
+   position: fixed;
+   top: 0;
+    z-index: 10000;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0px auto;
+    padding: 30px;
+}
+nav .logo a img{
+    width: 160px;
+    height: 40px;
+}
+nav ul li{
+    display: inline;
+    list-style:none;
+    position: relative;
+}
+nav ul li a{
+    color: rgb(94, 89, 89);
+    font-size: 16px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s;
+    position: relative;
+}
+nav ul li a:hover{
+    color: #2c2c2c;
+}
+nav ul li::before{
+    position: absolute;
+content: '';
+top: 24px;
+left: 10px;
+height: 2px;
+width: 80%;
+background: #fff;
+border-radius: 20px;
+opacity: 0;
+transition: 0.5s all linear;
+}
+nav ul li:hover::before{
+    opacity: 1;
+}
+.right-navbar{
+    display: flex;
+    align-items: center;
+}
+.phone{
+background-color: #e9ac1c;
+box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.1);
+padding: 8px 13px;
+border-radius: 5px;
+color: #fff;
+font-weight: 700;
+font-size: 16px;
+margin-right: 10px;
+transition: 0.2s;
+}
+.phone i{
+    color: #fff;
+    font-size: 16px;
+}
+.phone:hover{
+    background: rgb(255, 208, 0);
+}
+
+.nav-contact a{
+background-color: #e9ac1c;
+box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.1);
+padding: 7px 20px;
+border-radius: 5px;
+color: #fff;
+font-weight: 700;
+font-size: 16px;
+transition: 0.2s;
+}
+.nav-contact a:hover{
+    background: rgb(255, 208, 0);
+}
+
+/*----------this is mobile screen---------*/
+.menu{
+    border: 2px solid #e9ac1c;
+    border-radius: 5px;
+    padding: 7px 10px;
+z-index: 1000;
+cursor: pointer;
+display: none;
+}
+.menu i{
+    font-size: 17px;
+    color: rgb(143, 143, 143);
+}
+/*------------header end--------*/
+/*---------top to bottom scrollbar------------*/
+.to-top{
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    background: #242d38;
+    bottom:20px;
+    right:32px;
+    border-radius: 5px;
+    z-index: 1000;
+    font-size: 25px;
+    color:#fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s;
+    }
+    .to-top:hover{
+        color: #fff;
+        background-color: #3e516c;
+    }
+    .to-top-active{
+        opacity: 1;
+    pointer-events: auto;
+    }
+/*-----------hero-sec-start-----------*/
+#hero-bg{
+      background-color: #3e516c;
+      width: 100%;
+      height: 500px;
+     
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin:100px auto;
+}
+.hero-text{
+flex-basis: 50%;
+align-items: center;
+margin-top: 50px;
+}
+.hero-text h1{
+font-size: 40px;
+color: #fff;
+font-weight: 700;
+text-transform: uppercase;
+}
+.hero-text p{
+    color: #fff;
+    line-height: 1.7em;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: justify;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.hero-img{
+flex-basis: 40%;
+align-items: center;
+margin-top: 50px;
+}
+.hero-img img{
+    width: 100%;
+}
+.btn-ac{
+background-color: #e9ac1c;
+color: #fff;
+padding: 12px 40px;
+border-radius: 5px;
+color: #fff;
+font-size: 16px;
+font-weight: 600;
+margin-top: 20px;
+transition: 0.2s;
+text-transform: uppercase;
+}
+.btn-ac:hover{
+    background-color: rgb(255, 208, 0);
+}
+.btn-active{
+    background-color: #fff;
+color: #2e2c2c;
+padding: 12px 40px;
+border-radius: 5px;
+font-size: 14px;
+font-weight: 600;
+margin-top: 20px;
+margin-left: 10px;
+text-transform: uppercase;
+}
+.btn-ac1{
+background-color: #e9ac1c;
+color: #fff;
+padding: 12px 40px;
+border-radius: 5px;
+color: #fff;
+font-size: 16px;
+font-weight: 600;
+margin-top: 20px;
+transition: 0.2s;
+text-transform: uppercase;
+}
+.btn-ac1:hover{
+    background-color: rgb(255, 208, 0);
+}
+.btn-active1{
+    background-color: #fff;
+color: #2e2c2c;
+padding: 12px 40px;
+border-radius: 5px;
+font-size: 14px;
+font-weight: 600;
+margin-top: 20px;
+margin-left: 10px;
+text-transform: uppercase;
+}
+
+/*-----------------slick-slider------------*/
+  .slider {
+      width: 85%;
+      margin: 100px auto;
+  }
+  .slick-slide {
+    margin: 0px 10px;
+  }
+.slider1 img{
+    height: 100px;
+    width: 100px;
+}
+.slider2 img{
+    height: 50px;
+    width: 150px;
+}
+.slider3 img{
+    height: 40px;
+    width: 150px;
+}
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: black;
+    font-size: 30px;
+    margin-top: -50px;
+  }
+
+
+  .slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+  }
+  
+  .slick-active {
+    opacity: .5;
+  }
+
+  .slick-current {
+    opacity: 1;
+  }
+
+/*------------start-accompagnement-sec-------*/
+.accom-text{
+    padding-left: 50px;
+}
+.accom-text h3{
+    color: #626262;
+font-weight: 600;
+font-size:18px;
+text-transform: uppercase;
+}
+.accom-text h2{
+    padding-top: 10px;
+    font-size: 33px;
+    color: rgb(62, 81, 108);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.acom-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+}
+.acom-text1{
+    flex-basis: 33%;
+}
+.acom-text2 img{
+  width: 100%;
+}
+.acom-text2{
+    flex-basis: 33%;
+}
+.acom-text3{
+    flex-basis: 33%;
+    margin-top: -150px;
+}
+.acom-text1 h4{
+    font-size: 18px;
+    color: #e9ac1c;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.acom-text1 p{
+    line-height: 1.7em;
+    color: #626262;
+    font-size: 16px;
+    padding-top: 20px;
+}
+.acom-text2 .text2{
+    margin-top: -150px;
+}
+.acom-text3 h4{
+    font-size: 18px;
+    color: #e9ac1c;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.acom-text3 p{
+    line-height: 1.7em;
+    color: #626262;
+    font-size: 16px;
+    padding-top: 20px;
+}
+.acom-text4{
+   padding-left: 35%;
+   margin-top: -170px;
+}
+.acom-text4 h4{
+    font-size: 18px;
+    color: #e9ac1c;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.acom-text4 p{
+    line-height: 1.7em;
+    color: #626262;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.acom-text4 a{
+    text-decoration: none;
+    text-align: center;
+padding: 10px 30px;
+border-radius: 5px;
+color: #fff;
+font-size: 16px;
+font-weight: 600;
+background: #e9ac1c;
+transition: 0.2s;
+}
+.acom-text4 a:hover{
+    background-color: rgb(255, 208, 0);
+}
+/*------------Solenn-------*/
+#solenn{
+      background-color: #3e516c;
+      width: 100%;
+      height: 400px;
+}
+   .solenn{
+    padding-left: 50px;
+    padding-top: 70px;
+    width: 95%;
+   }
+.solenn img{
+height: 100px;
+width: 100px;
+border-radius: 50%;
+}
+.solenn h3{
+    padding-top: 20px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+}
+.solenn h4{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+.solenn p{
+    line-height: 1.7em;
+    color: #fff;
+    font-size: 16px;
+    padding-top: 20px;
+font-style: italic;
+}
+/*------------satisfaits-------*/
+.satisfaits{
+    text-align: center;
+}
+.satisfaits h3{
+    font-size: 18px;
+    color: #626262;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.satisfaits h2{
+    padding-top: 10px;
+    font-size: 32px;
+    color: #3e516c;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+/*-----------Pour atteindre vos objectifs--------*/
+#agence{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(232, 229, 229);
+}
+.agency{
+    text-align: center;
+}
+.agency h3{
+    font-size: 18px;
+    color: #817c7c;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.agency h2{
+    font-size: 32px;
+    color: #3f3d3d;
+    padding-top: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.agency-text{
+    background-color: #fff;
+    box-shadow: 5px 5px 0 0 rgba(0,0,0,0.1);
+   width: 60%;
+  margin: 20px auto;
+  border-radius: 5px;
+  padding: 20px 20px;
+}
+.agency-text h4{
+    font-size: 18px;
+    color: #e9ac1c;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.agency-text p{
+    line-height: 1.7em;
+    color: #626262;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.agency-btn{
+    text-align: center;
+    padding-top: 20px;
+}
+.agency-btn a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: #e9ac1c;
+    transition: 0.2s;
+}
+.agency-btn a:hover{
+  background-color: rgb(255, 208, 0);
+}
+  /*------------SODIGIX en quelques chiffres-------*/
+.chiffers-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+}
+.chriffers-text h3{
+  font-size: 80px;
+  font-weight: bold;
+color: #e9aa1b;
+}
+.chriffers-text span{
+    color: #626262;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 10ppx;
+}
+/*------------Le Blog des experts SODIGIX-------*/
+#blog{
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(232, 229, 229);
+}
+.blog-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+}
+.blog-text{
+    flex-basis: 60%;
+}
+.blog-img{
+    flex-basis: 40%;
+}
+.blog-img img{
+  width: 100%;
+}
+.blog-text h3{
+    font-size: 18px;
+    color: #817c7c;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.blog-text h2{
+    font-size: 32px;
+    color: #3f3d3d;
+    padding-top: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.blog-text a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: #e9ac1c;
+    transition: 0.2s;
+    text-transform: uppercase;
+}
+.blog-text a:hover{
+  background-color: rgb(255, 208, 0);
+}
+/*------------Faites décoller vos résultats !-------*/
+#faites{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #3e516c;
+}
+.faites-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+}
+.faites-text{
+    flex-basis: 50%;
+    text-align: center;
+}
+.faites-text h3{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.faites-text h2{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    padding-top: 10px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.faites-text ul li{
+list-style: none;
+display: inline;
+color: #fff;
+font-weight: 400;
+}
+.faites-text ul li i{
+    color: rgb(255, 208, 0);
+    font-weight: 700;
+    font-size: 16px;
+}
+.faites-text a{
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+
+}
+.line{
+    background: #3e516c;
+    width: 80%;
+    height: 2px;
+    margin: 20px auto;
+}
+/*--------footer-------------*/
+.footer-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+}
+.footer-text{
+    flex-basis: 25%;
+}
+.footer-text h3{
+    font-size: 16px;
+    color: #3e516c;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer-text ul li{
+    display: block;
+    list-style: none;
+}
+.footer-text ul li a{
+color: #626262;
+font-size: 16px;
+line-height: 2em;
+}
+.footer-text ul li a:hover{
+    color: #2e2c2c;
+}
+.footer-down{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+}
+.footer-downtext{
+    flex-basis: 24%;
+    text-align: center;
+}
+.footer-downtext img{
+    width: 100%;
+}
+.footer-downtext h3{
+    font-size: 16px;
+    color: #626262;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.footer-downtext p{
+    font-size: 16px;
+    color: #626262;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.footer-downtext span{
+    font-size: 14px;
+    color: #626262;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 10px;
+}
+.footer-downtext a{
+    color: #3e516c;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration:none;
+    margin-left: 10px;
+    margin-right:10px;
+}
+/*------------agency-pages-started-------*/
+/*-----------Google Ads-------*/
+#google-ads{
+     width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(232, 229, 229);
+    margin-top: -100px;
+}
+.google-ads{
+    padding-left: 50px;
+    padding-right: 50px; 
+}
+.google-ads h2{
+    font-size: 32px;
+    color: #3e516c;
+    font-weight: 600;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+.google-ads p{
+    font-size: 16px;
+    color: #3f3e3e;
+    font-weight: 400;
+    line-height: 1.7em;
+}
+.google-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+}
+.google-text{
+    flex-basis: 40%;
+}
+.google-text-box{
+    flex-basis: 55%;
+}
+.google-text h3{
+    font-size: 16px;
+    color: #3f3e3e;
+    background: #fff;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 0 0 rgba(0,0,0,0.1);
+    padding: 12px;
+}
+.google-text-box{
+box-shadow: 3px 3px 0 0 rgba(0,0,0,0.1);
+background-color: #fff;
+border-radius: 5px;
+padding: 20px 20px;
+text-align: center;
+}
+.google-text-box h3{
+    font-size: 25px;
+    color: #3e516c;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.google-text-box p{
+    font-size: 16px;
+    color: #626262;
+    font-weight: 400;
+    line-height: 1.7em;
+}
+.google-ads-btn{
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-right: 50px;
+}
+.google-ads-btn p{
+    color: #3f3e3e;
+    line-height: 1.7em;
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+.google-ads-btn1{
+    text-align: center;
+}
+ /*------------Google Ads à Paris----------*/
+#chooser{
+     width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(232, 229, 229);
+}
+.chooser-head{
+      display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+}
+.chooser-text{
+flex-basis: 32%;
+background: #fff;
+box-shadow: 3px 3px 0 0 rgba(0,0,0,0.1);
+color: #626262;
+font-weight: 400;
+padding: 20px 20px;
+height: 160px;
+border-radius: 5px;
+}
+.chooser-text h3{
+    font-size: 18px;
+    color: #e9ac1c;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.chooser-text p{
+    line-height: 1.7em;
+    color: #626262;
+    font-size: 14px;
+    font-weight: 400;
+}
+ /*------------Notre collaboration étape par étape----------*/
+.sodix{
+    padding-left: 50px;
+    padding-top: 20px;
+}
+.sodix h2{
+    font-size: 32px;
+    color: #3e516c;
+    font-weight: 700;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+.sodix p{
+    font-size: 18px;
+    color: #626262;
+    line-height: 1.7em;
+    font-weight: 400;
+}
+.sodix-text{
+    padding-left: 50px;
+    padding-top: 40px;
+    padding-right: 50px;
+}
+.sodix-text h3{
+    font-size: 20px;
+    color: #e9aa1b;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    position: relative;
+    margin-left: 80px;
+}
+.sodix-text h3::before{
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 20px;
+    border: 2px solid #3e516c;
+    border-radius: 50%;
+    top: 0px;
+    left: -40px;
+}
+.sodix-text p{
+    color: #626262;
+font-size: 16px;
+line-height: 1.7em;
+}
+.sodix-text p{
+    font-size: 14px;
+    color: #626262;
+    font-weight: 400;
+    position: relative;
+    margin-left: 80px;
+}
+.sodix-text p::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 3px;
+  background-color: #3e516c;
+    top: 0px;
+    left: -30px;
+    line-height: 1.7em;
+}
+/*------------Chief Marketing Officer chez Quable-------------*/
+
+#patricia{
+     width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(232, 229, 229);
+}
+.patricia{
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+}
+.patricia p{
+    font-size: 14px;
+    color: #626262;
+line-height: 1.7em;
+font-weight: 400;
+padding-bottom: 20px;
+}
+.patricia img{
+    padding-bottom: 10px;
+}
+.patricia h3{
+font-size: 16px;
+color: #3e516c;
+font-weight: 700;
+margin-top: 10px;
+}
+/*-----------agence Google Ads à Paris-------------*/
+.agency-google{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.agency-google h2{
+    font-size: 32px;
+    color: #3e516c;
+    font-weight: 700;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+.agency-google p{
+    font-size: 16px;
+    color: #626262;
+    line-height: 1.7em;
+    font-weight: 400;
+}
+.agency-google-head{
+   display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 80px auto;
+}
+.agency-google-text{
+    flex-basis: 48%;
+    background: #fff;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+    padding: 20px 20px;
+    border-radius: 5px;
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.agency-google-text h3{
+    font-size: 20px;
+    color: #536988;
+    font-weight: 700;
+    border: 3px solid #3e516c;
+    border-radius: 5px;
+   width: 300px;
+   text-align: center;
+   padding: 10px;
+   margin-top: -50px;
+   background: #fff;
+}
+.agency-google-text p{
+    font-size: 15px;
+    color: #626262;
+    line-height: 1.7em;
+    font-weight: 400;
+    margin-top: 20px;
+}
+ /*------------slick-slider------------*/
+#satis-bg{
+     width: 100%;
+    height: 250px;
+    background-color: rgb(232, 229, 229);
+}
+/*------------google-offert------------*/
+.google-offert{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.google-offert h2{
+    font-size: 32px;
+    color: #3e516c;
+    font-weight: 600;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+.google-offert-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+}
+.offert-text{
+    flex-basis: 60%;
+}
+.offert-text p{
+    font-size: 16px;
+    padding-bottom: 20px;
+    line-height: 1.7em;
+    color: #626262;
+    font-weight: 400;
+}
+.offert-text ul li{
+    font-size: 16px;
+    display: block;
+    color: #626262;
+    font-weight: 400;
+    line-height: 1.7em;
+}
+.offert-img{
+    flex-basis: 40%;
+}
+.offert-img img{
+    width: 100%;
+}
+/*-----------agence Google Ads Paris-----------*/
+.ads-paris{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.ads-paris h2{
+    font-size: 32px;
+    color: #3e516c;
+    font-weight: 600;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+.ads-text-faq{
+  padding-left: 50px;
+    padding-right: 50px;
+}
+.accordion {
+  background-color: #eee;
+  cursor: pointer;
+  padding: 20px 20px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+color: #626262;
+font-size: 16px;
+font-weight: 400;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  padding-top: 10px;
+padding-bottom: 10px;
+color: #626262;
+font-size: 15px;
+line-height: 1.7em;
+}
+.panel p{
+    font-size: 15px;
+    line-height: 1.7em;
+    color: #626262;
+    padding-top: 10px;
+}
+.panel span{
+    color: #3e516c;
+    font-size: 16px;
+    font-weight: 700;
+}
+/*-----------google-map------*/
+.google-map iframe{
+    width: 100%;
+    height: 300px;
+}
+/*-----------Nos articles SEA----------*/
+.article-head{
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+}
+.article-text{
+    flex-basis: 24%;
+    background: #fff;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    width: 100%;
+    height: 100px;
+    padding:10px;
+    display: flex;
+    align-items: center;
+}
+.article-text h3{
+    font-size: 16px;
+    color: #626262;
+    font-weight: 400;
+    line-height: 1.7em;
+}
+
+
+
+
+
+
+
+    /*------------this is for mobile screen-------*/
+@media only screen and (max-width: 771px){
+    nav{
+width: 90%;
+    }
+    nav .logo img{
+width: 80%;
+    }
+    .menu{
+        display: block;
+        font-size: 30px;
+        color: #000;
+    }
+    .main{
+        margin-top: 60px;
+    }
+    #listmenu{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        top: 100px;
+        left: 0;
+        background: #fff;
+        overflow: hidden;
+        max-height: 0;
+        transition: 0.5s;
+    }
+#listmenu li{
+    display: block;
+}
+#listmenu li a{
+    color: #000;
+    line-height: 3em;
+    color: #626262;
+    font-size: 1rem;
+}
+#listmenu i{
+    display: none;
+}
+.right-navbar{
+    display: none;
+}
+#hero-bg{
+    height: 600px;
+}
+.hero{
+    display: block;
+}
+.hero-text{
+    flex-basis: 100%;
+}
+.hero-text h1{
+font-size: 25px;
+padding-top: 30px;
+}
+.hero-text p{
+    font-size: 14px;
+}
+.btn-ac{
+    padding: 10px 20px;
+    font-size: 14px;
+}
+.btn-active{
+    padding: 10px 20px;
+    font-size: 14px;
+}
+.accom-text{
+    padding-left: 20px;
+}
+.accom-text h3{
+    font-size: 16px;
+}
+.accom-text h2{
+    font-size: 22px;
+}
+.acom-header{
+    display: block;
+}
+.acom-text3{
+    margin-top: 20px;
+}
+.acom-text4{
+    padding-left: 20px;
+    margin-top: 20px;
+}
+#solenn{
+    height: 520px;
+}
+.solenn{
+    padding-left: 20px;
+    padding-top: 30px;
+   }
+   .satisfaits h3{
+    font-size: 16px;
+   }
+   .satisfaits h2{
+    font-size: 22px;
+   }
+.agency h3{
+    font-size: 16px;
+}
+.agency h2{
+    font-size: 22px;
+}
+.agency-text{
+    width: 80%;
+}
+.chiffers-head{
+    display: block;
+}
+.chriffers-text{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.chriffers-text h3{
+    font-size: 40px;
+}
+.blog-head{
+    display: block;
+}
+.blog-text{
+    padding-top: 20px;
+}
+.blog-text h3{
+    font-size: 16px;
+}
+.blog-text h2{
+    font-size: 22px;
+}
+.faites-head{
+    display: block;
+}
+.faites-text{
+    padding-top: 20px;
+}
+.faites-text h3{
+    font-size: 16px;
+}
+.faites-text h2{
+    font-size: 25px;
+}
+.btn-ac1{
+    padding: 7px 15px;
+    font-size: 14px;
+}
+.btn-active1{
+    padding: 7px 15px;
+    font-size: 14px;
+}
+.footer-head{
+    display: block;
+    padding-top: 20px;
+}
+.footer-down{
+    display: block;
+}
+.footer-downtext{
+    padding-top: 20px;
+}
+.footer-downtext img{
+    width: 50%;
+}
+.google-head{
+    display: block;
+}
+.google-text-box{
+    margin-top: 20px;
+}
+.google-ads h2{
+    font-size: 18px;
+}
+.chooser-head{
+    display: block;
+}
+.chooser-text{
+    margin-top: 20px;
+}
+.sodix{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.sodix h2{
+    font-size: 20px;
+}
+.sodix-text{
+    padding-left: 10px;
+    padding-top: 40px;
+    padding-right: 10px;
+}
+.agency-google{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.agency-google h2{
+    font-size: 20px;
+}
+.agency-google-head{
+    display: block;
+}
+.agency-google-text{
+    height: 250px;
+}
+.agency-google-text h3{
+    margin-left: -20px;
+}
+.google-offert{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.google-offert h2{
+    font-size: 22px;
+}
+.google-offert-head{
+    display: block;
+}
+.offert-img{
+    margin-top: 20px;
+}
+.ads-paris{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.ads-paris h2{
+    font-size: 20px;
+}
+.ads-text-faq{
+  padding-left: 20px;
+    padding-right: 20px;
+}
+.article-head{
+    display: block;
+}
+.article-text{
+    margin-top: 20px;
+}
+.btn-ac1{
+    font-size: 12px;
+}
+.btn-active1{
+    font-size: 12px;
+}
+
+
+
+}
